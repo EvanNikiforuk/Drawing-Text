@@ -24,3 +24,6 @@ titleFont = createFont("Goudy Stout", 55); //Verify the font exists in processin
 //
 //Layout our text space typographical features
 rect(titleX, titleY, titleWidth, titleHeight);
+//
+//Text Draw: Pepeatedly Executed Code
+text( title, titleX, titleY, titleWidth, titleHeight );
