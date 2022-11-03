@@ -22,7 +22,7 @@ titleHeight = footerHeight = appHeight * 1/10;
 //Font from OS (Operating System)
 String[] fontList = PFont.list(); //To list all fonts available on OS
 printArray(fontList); //For listing all possible fonts
-titleFont = createFont("Haettenschweiler", 55); //Verify the font exists in Processing.JAVA
+titleFont = createFont("Sitka Text", 55); //Verify the font exists in Processing.JAVA
 // Tools / Create Font / Find Font / Do not press "OK", known bug
 //
 //Layout our text space and typographical features
