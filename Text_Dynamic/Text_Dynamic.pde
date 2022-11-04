@@ -4,9 +4,8 @@ String title = "Rich", middle = "Homie", footer = "Quan";
 float titleX, titleY, titleWidth, titleHeight;
 float footerX, footerY, footerWidth, footerHeight;
 float middleX, middleY, middleWidth, middleHeight;
-float bR, bG, bB;
 PFont titleFont;
-color blue=#03F4FF, resetDefaultInk=#FFFFFF; //Not night mode friendly
+color red=#FF0505,green=#05FF0F,blue=#03F4FF, resetDefaultInk=#FFFFFF; //Not night mode friendly
 //
 void setup() 
 {
@@ -63,10 +62,23 @@ void setup()
 //
 void draw() 
 {
-  fill(255,0,0);
+  fill(0,0,0);
   rect(125,65,250,50);
+  if (mousePressed&&mouseX>125&&mouseX<375) {
+    background(255,5,5);
+  }
+  fill(0,0,0);
+  rect(125,275,250,50);
+  if (mousePressed&&mouseX>125&&mouseX<375) {
+    background(5,255,15);
+  }
+  fill(0,0,0);
+  rect(125,485,250,50);
+  if (mousePressed&&mouseX>125&&mouseX<375) {
+    background(3,244,255);
+  }
   //Text Draw: Repeatedly Executed Code
-  fill(blue); //Ink
+  fill(red); //Ink
   textAlign(CENTER, BASELINE); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   fontSize = 50;
@@ -74,9 +86,11 @@ void draw()
   text( title, titleX, titleY, titleWidth, titleHeight);
   textAlign(CENTER, BASELINE); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  fill(green);
   text( middle, middleX, middleY, middleWidth, middleHeight);
   textAlign(CENTER, BASELINE); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  fill(blue);
   text( footer, footerX, footerY, footerWidth, footerHeight);
   textAlign(CENTER, BASELINE); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
