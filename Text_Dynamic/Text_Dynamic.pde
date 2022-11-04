@@ -65,17 +65,17 @@ void draw()
   fill(0,0,0);
   rect(125,65,250,50);
   if (mousePressed&&mouseX>125&&mouseX<375) {
-    background(255,5,5);
+    background(red);
   }
   fill(0,0,0);
   rect(125,275,250,50);
   if (mousePressed&&mouseX>125&&mouseX<375) {
-    background(5,255,15);
+    background(green);
   }
   fill(0,0,0);
   rect(125,485,250,50);
   if (mousePressed&&mouseX>125&&mouseX<375) {
-    background(3,244,255);
+    background(blue);
   }
   //Text Draw: Repeatedly Executed Code
   fill(red); //Ink
