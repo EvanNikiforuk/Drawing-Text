@@ -4,6 +4,7 @@ String title = "Rich", middle = "Homie", footer = "Quan";
 float titleX, titleY, titleWidth, titleHeight;
 float footerX, footerY, footerWidth, footerHeight;
 float middleX, middleY, middleWidth, middleHeight;
+float bR, bG, bB;
 PFont titleFont;
 color blue=#03F4FF, resetDefaultInk=#FFFFFF; //Not night mode friendly
 //
@@ -62,6 +63,8 @@ void setup()
 //
 void draw() 
 {
+  fill(255,0,0);
+  rect(125,65,250,50);
   //Text Draw: Repeatedly Executed Code
   fill(blue); //Ink
   textAlign(CENTER, BASELINE); //Align X&Y, see Processing.org / Reference
